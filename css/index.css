@@ -1,0 +1,33 @@
+.fas{
+    width:1.5em;
+    text-align:center;
+}
+
+.fa-graduation-cap, .fa-laptop-code, .fa-user-friends {
+    margin-right: 1em;
+}
+
+.fa-dot-circle, .fa-circle{
+    margin:0.3em 1em 0 0;
+}
+
+.title-section {
+    display: flex;
+    align-items: center;
+}
+hr{
+    width:100%;
+}
+
+.dot{
+    display:flex;
+}
+
+.row{
+    width:100%;
+}
+
+img{
+    border:1px solid white;
+    border-radius:50%;
+}
