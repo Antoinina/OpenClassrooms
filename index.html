@@ -25,80 +25,91 @@
         }
     </script>
 </head>
-<body>
+<body class="container-fluid">
     <!-- Rubrique contenant la photo de profile et le titre -->
-    <header class="row"> 
-        <img class="col-sm-2" src="assets/profile.jpg" alt="Photo de profile" /> 
-        <section class="col-sm-10">
-            <h2>Tolotra RAMANANTOANINA</h2>
-            <h1>Développeur web freelance</h1>
+    <header class="row header"> 
+        <section class="col-md-3 img">
+            <img  src="assets/profile.jpg" alt="Photo de profile" />
+        </section>
+        
+        <section class="col-md-9 title">
+            <h2 class="display-2 font-weight-normal"><span id="firstname">TOLOTRA</span> RAMA</h2>
+            <h1 class="h2 font-weight-normal"><em class="">Dével</em>oppeur web freelance</h1>
         </section>
     </header>
 
     <main class="row">
         <!-- Rubrique de gauche contenant les informations personnelles -->
-        <aside class=" col-md-4">
+        <aside class="col-md-3">
             <!--Rubrique contact-->
-            <section>
-                <h4>CONTACT</h4>
-                <table>
-                    <tr>
-                        <td><a href="https://goo.gl/maps/AJ5CAKqQTGnupocs7">282 Avenue des grésillons <br /> Asnières-sur-seine, France</a></td>
-                    </tr>
-                    <tr>
-                        <td>Télephone <br /> +33 (0) 6 08 03 94 97</td>
-                    </tr>
-                    <tr>
-                        <td>Email <br /> <a href="mailto:tolotra.ramanantoanina@gmail.com">tolotra.ramanantoanina@gmail.com</a></td>
-                    </tr>
-                    <tr>
-                        <td>Site web <br /> <a href="https://tolonina.wixsite.com/cvtolotra">www.tolotraramanantoanina.com</a> </td>
-                    </tr>
-                    <tr>
-                        <td>Skype <br /> @antoinina_rama</td>
-                    </tr>
-                </table>
-            </section>
+            <section class="row">
+                <section class="col-12">
+                        <h4 class="h3">CONTACT</h4>
+                        <table class="table-hover">
+                            <tr>
+                                <td><a href="https://goo.gl/maps/AJ5CAKqQTGnupocs7">282 Avenue des grésillons <br /> Asnières-sur-seine, France</a></td>
+                            </tr>
+                            <tr>
+                                <td>Télephone <br /> +33 (0) 6 08 03 94 97</td>
+                            </tr>
+                            <tr>
+                                <td>Email <br /> <a href="mailto:tolotra.ramanantoanina@gmail.com">tolotra.ramanantoanina@gmail.com</a></td>
+                            </tr>
+                            <tr>
+                                <td>Site web <br /> <a href="https://tolonina.wixsite.com/cvtolotra">www.tolotraramanantoanina.com</a> </td>
+                            </tr>
+                            <tr>
+                                <td>Skype <br /> @antoinina_rama</td>
+                            </tr>
+                        </table>
+                </section>
 
-            <!--Rubrique A propos-->
-            <section>
-                <h4>À PROPOS DE MOI</h4>
-                <p>
-                    Le maître mot qui régit ma vie est : OPTIMISATION.  Le monde du Digital et du Web est, pour moi,
-                    un exemple de vie offrant ainsi une multitude de solutions, nécessitant de connaître tous les
-                    rouages d'une entité pour en sortir le meilleur. Ne pas avoir peur de détruire pour mieux
-                    reconstruire. <br />Un univers qui rallie parfaitement la CREA & TECH.
-                </p>
+                <!--Rubrique A propos-->
+                <section class="col-12 description">
+                        <h4 class="h3">À PROPOS DE MOI</h4>
+                        <p>
+                            Le maître mot qui régit ma vie est : OPTIMISATION.  Le monde du Digital et du Web est, pour moi,
+                            un exemple de vie offrant ainsi une multitude de solutions, nécessitant de connaître tous les
+                            rouages d'une entité pour en sortir le meilleur. Ne pas avoir peur de détruire pour mieux
+                            reconstruire. <br />Un univers qui rallie parfaitement la CREA & TECH.
+                        </p>
+                </section>
             </section>
+            
             <!--Rubrique Loisirs-->
-            <section>
-                <h4>LOISIRS</h4>
-                <i class="fas fa-basketball-ball fa-3x"></i>
-                <i class="fas fa-table-tennis fa-3x"></i>
-                <i class="fas fa-plane fa-3x"></i>
+            <section class="row ">
+                <div class="col-12 loisirs">
+                    <h4 class="h3">LOISIRS</h4>
+                    <div class="i">
+                        <i class="fas fa-basketball-ball fa-3x"></i>
+                        <i class="fas fa-table-tennis fa-3x"></i>
+                        <i class="fas fa-plane fa-3x"></i>
+                    </div>
+                    
+                </div>
             </section>
         </aside>
 
  <!---------------------------------------------------------------------------------------------------------------------->
  
-        <!-- Rubrique de droite contenant la formation et expériences professionnelles -->
-        <article class="col-md-8">
+        <!-- Rubrique de droite contenant le body -->
+        <article class="col-md-9">
             <!--Rubrique Formations-->
-            <section class="row">
+            <section class="col-11">
                 <!--Titre + icône-->
-                <div class="title-section col-md-12">
+                <div class="row">
                     <i class="fas fa-graduation-cap fa-3x"></i>
-                    <h3>FORMATION</h3>
+                    <h3 class="formation-title">FORMATION</h3>
                 </div>
                 <hr />
                 <!--Détails du parcours-->
-                <div class="row">
-                    <div class="col-sm-4 dot">
+                <div class="row rubrique">
+                    <div class="col-4 dot">
                         <i class="far fa-dot-circle"></i><p>2020-2021 <br />Paris</p>
                     </div>
-                    <div class="col-sm-8">
-                        <h3>OPENCLASSROOMS</h3>
-                        <h2>Junior Web Developer</h2>
+                    <div class="col-8">
+                        <h3 class="h4">OPENCLASSROOMS</h3>
+                        <h2 class="h4 font-weight-light">Junior Web Developer</h2>
                         <p>
                             Avec notre formation de développeur web, vous allez apprendre à :<br />
 
@@ -116,36 +127,34 @@
                         </p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-sm-4 dot">
+                <div class="row rubrique">
+                    <div class="col-4 dot">
                         <i class="fas fa-circle"></i><p>2019-2020 <br />Paris</p>
                     </div>
-                    <div class="col-sm-8">
-                        <h3>ECOLE D'INGÉNIEUR EFREI PARIS</h3>
-                        <h2>Ingénieur informatique</h2>
+                    <div class="col-8">
+                        <h3 class="h4">ECOLE D'INGÉNIEUR EFREI PARIS</h3>
+                        <h2 class="h4 font-weight-light">Ingénieur informatique</h2>
                         <p>1ère et 2ème année de Cycle préparatoire intégré</p>
                     </div>
                 </div>
-            </section>
 
- <!---------------------------------------------------------------------------------------------------------------------->
-            
-    <!--Rubrique Expériences profesionnelles-->
-            <section class="row">
+
+                <!---------------------------------------------------------------------------------------------------------------------->
+                <!--Rubrique Expériences profesionnelles-->
                 <!--Titre + icône-->
-                <div class="title-section col-md-12">
+                <div class="row">
                     <i class="fas fa-laptop-code fa-3x"></i>
-                    <h3>EXPÉRIENCES PROFESSIONNELLES</h3>
+                    <h3 class="formation-title">EXPÉRIENCES PROFESSIONNELLES</h3>
                 </div>
                 <hr />
                 <!--Détails du parcours-->
-                <div class="row">
+                <div class="row rubrique">
                     <div class="col-sm-4 dot">
                         <i class="far fa-dot-circle"></i><p>2020-Poste actuel <br />Paris</p>
                     </div>
                     <div class="col-sm-8">
-                        <h3>BY CHARLOT</h3>
-                        <h2>IT Project Manager</h2>
+                        <h3 class="h4">BY CHARLOT</h3>
+                        <h2 class="h4 font-weight-light">IT Project Manager</h2>
                         <p>
                             Chef de projet au sein d'une start-up en plein essor.<br />
                             Rôle: Mettre en place des projets innnovants dans le but d'une digitalisation.<br />
@@ -153,13 +162,13 @@
                         </p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row rubrique">
                     <div class="col-sm-4 dot">
                         <i class="fas fa-circle"></i><p>2018-2020 <br />Villejuif</p>
                     </div>
                     <div class="col-sm-8">
-                        <h3>EFREI PARIS</h3>
-                        <h2>Chef de Projet Digital</h2>
+                        <h3 class="h4">EFREI PARIS</h3>
+                        <h2 class="h4 font-weight-light">Chef de Projet Digital</h2>
                         <p>
                             Gestion d'un projet pour un client: de l'idée à la conception.<br />
                             Rôle: Chef de Projet et Responsable technique. <br />
@@ -167,13 +176,13 @@
                         </p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row urbrique">
                     <div class="col-sm-4 dot">
                         <i class="fas fa-circle"></i><p>2017-2018<br /> Genevilliers</p>
                     </div>
                     <div class="col-sm-8">
-                        <h3>CUBYN</h3>
-                        <h2>Team Leader</h2>
+                        <h3 class="h4">CUBYN</h3>
+                        <h2 class="h4 font-weight-light">Team Leader</h2>
                         <p>
                             Management d'équipe et acheminement des colis.<br />
                             Rôle: Manager une équipe d'opérateurs.<br />
@@ -181,38 +190,38 @@
                         </p>
                     </div>
                 </div>
-            </section>
 
-<!----------------------------------------------------------------------------------------------------------------------->
+
+                <!----------------------------------------------------------------------------------------------------------------------->
+                <!-- Rubrique contenant les recommandations -->
+                <footer>
+                    <!--Titre + icône-->
+                    <section class="row">
+                        <i class="fas fa-user-friends fa-3x"></i>
+                        <h3 class="formation-title">RECOMMANDATIONS</h3>
+                    </section>
+                    <hr />
+                    <section class="row">
+                        <div class="col-md-6">
+                            <h6>Jean-Baptiste COUDRAY</h6>
+                            <p>
+                                Consultant Tpt & Douane, ALIS <br />
+                                Téléphone: 06 06 06 06 06<br />
+                                Email : jb_coudray@alis.com
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Antoine RADIER</h6>
+                            <p>
+                                Team Leader, CUBYN<br />
+                                Téléphone: 07 07 07 07 07<br />
+                                Email : antoine_radier@cubyn.com
+                            </p>
+                        </div>
+                    </section>
            
-            <!-- Rubrique contenant les recommandations -->
-            <footer class="row">
-                <!--Titre + icône-->
-                <section class="col-md-12 title-section">
-                    <i class="fas fa-user-friends fa-3x"></i>
-                    <h3>RECOMMANDATIONS</h3>
-                </section>
-                <hr />
-                <section class="row">
-                    <div class="col-md-6">
-                        <h6>Jean-Baptiste COUDRAY</h6>
-                        <p>
-                            Consultant Tpt & Douane, ALIS <br />
-                            Téléphone: 06 06 06 06 06<br />
-                            Email : jb_coudray@alis.com
-                        </p>
-                    </div>
-                    <div class="col-md-6">
-                        <h6>Antoine RADIER</h6>
-                        <p>
-                            Team Leader, CUBYN<br />
-                            Téléphone: 07 07 07 07 07<br />
-                            Email : antoine_radier@cubyn.com
-                        </p>
-                    </div>
-                </section>
-
-            </footer>
+                 </footer>
+            </section>
         </article>
 
 
