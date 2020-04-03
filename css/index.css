@@ -55,9 +55,10 @@ section >.description{
     padding-top:2em;
 }
 .i {
-    text-align: center !important;
+    text-align:center!important;
     padding-top:2em;
     padding-bottom:2em;
+    align-items:center;
 }
 section > .loisirs{
     padding-top:48em;
@@ -100,7 +101,7 @@ main{
 section > hr, footer>hr {
     width: 100%;
     height: 0.05em;
-    background-color:black;
+    background-color:white;
 }
 .dot {
     display: flex;
@@ -116,12 +117,26 @@ h3 {
 .fas{
     width:1.5em;
     text-align:center;
-
 }
 .fa-graduation-cap, .fa-laptop-code, .fa-user-friends {
     margin-right: 1em;
     padding-top:0.5em;
+    color: white;
 }
 .fa-dot-circle, .fa-circle{
     margin:0.3em 1em 0 0;
+    color:white;
 }
+.icone{
+        border: 1px solid black;
+        border-radius:50%;
+        width:1.5em;
+        height:1.5em;
+        line-height:1.5em!important;
+}
+.icone:hover{
+    opacity:0.5;
+}
+
+
+
