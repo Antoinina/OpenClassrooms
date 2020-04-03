@@ -1,23 +1,239 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title>Web Developer</title>
+    <!-- Favicon -->
+    <link rel="icon"  href="assets/favicon.ico">
+
 
     <!-- All links to style -->
     <link href="css/index.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  
+
     <!-- For responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-</head>
-<body>
-    <h1 class="display-2">Hello world</h1>
 
-    <!-- To use jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <!-- Réferencement -->
+    <script type="application/ld+json">
+        {
+        "@context": "http://www.schema.org",
+        "@type": "person",
+        "name": "Tolotra RAMANANTOANINA",
+        "jobTitle": "Web Developper",
+        "email": "tolotra.ramanantoanina@gmail.com",
+        "telephone": "+33608039497",
+        "birthDate": "1993-06-08"
+        }
+    </script>
+
+</head>
+<body class="container-fluid">
+    <!-- Rubrique contenant la photo de profile et le titre -->
+    <header class="row header"> 
+        <section class="col-md-3 img">
+            <img  src="assets/profile.jpg" alt="Photo de profile" />
+        </section>
+        
+        <section class="col-md-9 title">
+            <h2 class="display-2 font-weight-normal"><span id="firstname">TOLOTRA</span> RAMA</h2>
+            <h1 class="h2 font-weight-normal"><em class="">Dével</em>oppeur web freelance</h1>
+        </section>
+    </header>
+
+    <main class="row">
+        <!-- Rubrique de gauche contenant les informations personnelles -->
+        <aside class="col-md-3">
+            <!--Rubrique contact-->
+            <section class="row">
+                <div class="col-12">
+                        <h4 class="h3">CONTACT</h4>
+                        <table class="table-hover">
+                            <tr>
+                                <td><a href="https://goo.gl/maps/AJ5CAKqQTGnupocs7" target="_blank">282 Avenue des grésillons <br /> Asnières-sur-seine, France</a></td>
+                            </tr>
+                            <tr>
+                                <td>Télephone <br /><a href="tel: +33 (0) 6 08 03 94 97" target="_blank"> +33 (0) 6 08 03 94 97</a></td>
+                            </tr>
+                            <tr >
+                                <td class="email">Email <br /> <a href="mailto:tolotra.ramanantoanina@gmail.com" target="_blank">tolotra.ramanantoanina@gmail.com</a></td>
+                            </tr>
+                            <tr>
+                                <td>Site web <br /> <a href="https://tolonina.wixsite.com/cvtolotra" target="_blank">www.tolotraramanantoanina.com</a> </td>
+                            </tr>
+                            <tr>
+                                <td>Skype <br /> @antoinina_rama</td>
+                            </tr>
+                        </table>
+                </div>
+
+                <!--Rubrique A propos-->
+                <section class="col-12 description">
+                        <h4 class="h3">À PROPOS DE MOI</h4>
+                        <p>
+                            Le maître mot qui régit ma vie est : OPTIMISATION.  Le monde du Digital et du Web est, pour moi,
+                            un exemple de vie offrant ainsi une multitude de solutions, nécessitant de connaître tous les
+                            rouages d'une entité pour en sortir le meilleur. Ne pas avoir peur de détruire pour mieux
+                            reconstruire. <br />Un univers qui rallie parfaitement la CREA & TECH.
+                        </p>
+                </section>
+            </section>
+            
+            <!--Rubrique Loisirs-->
+            <section class="row ">
+                <div class="col-12 loisirs">
+                    <h4 class="h3">LOISIRS</h4>
+                    <div class="i">
+                        <i class="fas fa-basketball-ball fa-3x icone"></i>
+                        <i class="fas fa-table-tennis fa-3x icone"></i>
+                        <i class="fas fa-plane fa-3x icone"></i>
+                    </div>
+                    
+                </div>
+            </section>
+        </aside>
+
+ <!---------------------------------------------------------------------------------------------------------------------->
+ 
+        <!-- Rubrique de droite contenant le body -->
+        <article class="col-md-9">
+            <!--Rubrique Formations-->
+            <section class="col-11">
+                <!--Titre + icône-->
+                <div class="row">
+                    <i class="fas fa-graduation-cap fa-3x"></i>
+                    <h3 class="formation-title">FORMATION</h3>
+                </div>
+                <hr />
+                <!--Détails du parcours-->
+                <div class="row rubrique">
+                    <div class="col-sm-4 dot">
+                        <i class="far fa-dot-circle"></i><p>2020-2021 <br />Paris</p>
+                    </div>
+                    <div class="col-sm-8">
+                        <h3 class="h4">OPENCLASSROOMS</h3>
+                        <h2 class="h4 font-weight-light">Junior Web Developer</h2>
+                        <p>
+                            Avec notre formation de développeur web, vous allez apprendre à :<br />
+
+                            découper, assembler et intégrer tous les éléments d’une maquette graphique en HTML5 et CSS ;<br />
+                            ajouter du contenu audio et vidéo en HTML5 ;<br />
+                            animer les pages web avec CSS3 ;<br />
+                            appliquer les standards du web et les normes en vigueur ;<br />
+                            construire un site web fluide s’adaptant à tout type d’écran (web, smartphone et tablette) ;<br />
+                            améliorer le référencement naturel en utilisant les balises selon leur sémantique ;<br />
+                            faire réagir la page web en fonction des actions de l’utilisateur en JavaScript ;<br />
+                            se connecter à un service web pour exploiter des données tierces (API) ;<br />
+                            gérer les comptes utilisateurs ;<br />
+                            concevoir un site maintenable grâce à la gestion des erreurs et exceptions ;<br />
+                            créer, gérer et afficher le contenu d’une base de données.<br />
+                        </p>
+                    </div>
+                </div>
+                <div class="row rubrique">
+                    <div class="col-sm-4 dot">
+                        <i class="fas fa-circle"></i><p>2019-2020 <br />Paris</p>
+                    </div>
+                    <div class="col-sm-8">
+                        <h3 class="h4">ECOLE D'INGÉNIEUR EFREI PARIS</h3>
+                        <h2 class="h4 font-weight-light">Ingénieur informatique</h2>
+                        <p>1ère et 2ème année de Cycle préparatoire intégré</p>
+                    </div>
+                </div>
+
+
+                <!---------------------------------------------------------------------------------------------------------------------->
+                <!--Rubrique Expériences profesionnelles-->
+                <!--Titre + icône-->
+                <section class="row">
+                    <i class="fas fa-laptop-code fa-3x"></i>
+                    <h3 class="formation-title">EXPÉRIENCES PROFESSIONNELLES</h3>
+                </section>
+                <hr />
+                <!--Détails du parcours-->
+                <div class="row rubrique">
+                    <div class="col-sm-4 dot">
+                        <i class="far fa-dot-circle"></i><p>2020-Poste actuel <br />Paris</p>
+                    </div>
+                    <div class="col-sm-8">
+                        <h3 class="h4">BY CHARLOT</h3>
+                        <h2 class="h4 font-weight-light">IT Project Manager</h2>
+                        <p>
+                            Chef de projet au sein d'une start-up en plein essor.<br />
+                            Rôle: Mettre en place des projets innnovants dans le but d'une digitalisation.<br />
+                            Missions: Développement d'une interface front, Amélioration UX, Automatisation d'impression
+                        </p>
+                    </div>
+                </div>
+                <div class="row rubrique">
+                    <div class="col-sm-4 dot">
+                        <i class="fas fa-circle"></i><p>2018-2020 <br />Villejuif</p>
+                    </div>
+                    <div class="col-sm-8">
+                        <h3 class="h4">EFREI PARIS</h3>
+                        <h2 class="h4 font-weight-light">Chef de Projet Digital</h2>
+                        <p>
+                            Gestion d'un projet pour un client: de l'idée à la conception.<br />
+                            Rôle: Chef de Projet et Responsable technique. <br />
+                            Missions: Gestion du projet en AGILE, Mise en place d'un cahier des charges, Création de maquettes, Développement du site.
+                        </p>
+                    </div>
+                </div>
+                <div class="row urbrique">
+                    <div class="col-sm-4 dot">
+                        <i class="fas fa-circle"></i><p>2017-2018<br /> Genevilliers</p>
+                    </div>
+                    <div class="col-sm-8">
+                        <h3 class="h4">CUBYN</h3>
+                        <h2 class="h4 font-weight-light">Team Leader</h2>
+                        <p>
+                            Management d'équipe et acheminement des colis.<br />
+                            Rôle: Manager une équipe d'opérateurs.<br />
+                            Missions: Gestion d'équipe, Mis en place et MAJ des process, Bon acheminement des colis.
+                        </p>
+                    </div>
+                </div>
+
+
+                <!----------------------------------------------------------------------------------------------------------------------->
+                <!-- Rubrique contenant les recommandations -->
+                <footer>
+                    <!--Titre + icône-->
+                    <section class="row">
+                        <i class="fas fa-user-friends fa-3x"></i>
+                        <h3 class="formation-title">RECOMMANDATIONS</h3>
+                    </section>
+                    <hr />
+                    <section class="row">
+                        <div class="col-md-6">
+                            <h6>Jean-Baptiste COUDRAY</h6>
+                            <p>
+                                Consultant Tpt & Douane, ALIS <br />
+                                Téléphone: 06 06 06 06 06<br />
+                                Email : jb_coudray@alis.com
+                            </p>
+                        </div>
+                        <div class="col-md-6">
+                            <h6>Antoine RADIER</h6>
+                            <p>
+                                Team Leader, CUBYN<br />
+                                Téléphone: 07 07 07 07 07<br />
+                                Email : antoine_radier@cubyn.com
+                            </p>
+                        </div>
+                    </section>
+           
+                 </footer>
+            </section>
+        </article>
+
+
+    </main>
+
+    
+
+    <!-- To use fontawesome -->
+    <script src="https://kit.fontawesome.com/3087b25d19.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,212 @@
+@font-face {
+    font-family: "Nobel";
+    src: url(assets/Nobel-Regular.eot?#iefix) format("embedded-opentype"),
+        url(assets/Nobel-Regular.otf) format("opentype"),
+        url(assets/Nobel-Regular.woff2) format("woff2"), 
+        url(assets/Nobel-Regular.woff) format("woff"), 
+        url(assets/Nobel-Regular.ttf) format("truetype"),
+        url(assets/Nobel-Regular.svg#Nobel) format("svg");
+}
+
+
+/*Header template*/
+.header {
+    height: 100%;
+    align-items: center;
+    font-family: Nobel;
+}
+img {
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 13em;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+.header>.col-md-9{
+    padding-left:5em;
+}
+#firstname{
+    color: #B9D6D6;
+}
+em {
+    text-decoration: underline;
+    text-decoration-color: #B9D6D6;
+    font-style:normal;
+}
+
+/************************************************************/
+
+/*Sidebar template*/
+.col-md-3 {
+    background-color: #E3E3E3;
+}
+h4, .img {
+    text-align: center;
+}
+h4{
+    background-color:white;
+    padding:0.2em 0;
+     font-family:Nobel;
+}
+.col-12 > p {
+    margin: 2em 2em;
+}
+section >.description{
+    padding-top:2em;
+}
+.i {
+    text-align:center!important;
+    padding-top:2em;
+    padding-bottom:2em;
+    align-items:center;
+}
+.row>.loisirs>.i{
+    display:flex;
+    justify-content:space-around;
+}
+section > .loisirs{
+    padding-top:48em;
+}
+table{
+    margin:2em 0 0 2em;
+}
+table td{
+    padding:0.75em 0.75em 0.75em 0;
+}
+.row > .col-12 {
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: justify;
+}
+td a{
+    text-decoration:none;
+    color:black;
+}
+
+
+
+/********************************************************/
+
+/*Body template*/
+main{
+    background-color: #B9D6D6;
+}
+.col-11{
+    margin-left:4em;
+}
+.formation-title{
+    padding-top:1em;
+}
+.rubrique{
+    margin-top:3em;
+    margin-bottom:2em;
+}
+section > hr, footer>hr {
+    width: 100%;
+    height: 0.05em;
+    background-color:white;
+}
+.dot {
+    display: flex;
+}
+h3 {
+    font-family: Nobel;
+}
+
+
+/************************************************************/
+
+/*Mis en forme des icônes*/
+.fas{
+    width:1.5em;
+    text-align:center;
+}
+.fa-graduation-cap, .fa-laptop-code, .fa-user-friends {
+    margin-right: 1em;
+    padding-top:0.5em;
+    color: white;
+}
+.fa-dot-circle, .fa-circle{
+    margin:0.3em 1em 0 0;
+    color:white;
+}
+.icone{
+        border: 1px solid black;
+        border-radius:50%;
+        width:1.5em;
+        height:1.5em;
+        line-height:1.5em!important;
+}
+.icone:hover{
+    opacity:0.5;
+}
+
+/*Faire un check sur W3C*/
+/************************************************************************/
+
+/*Media queries small*/
+@media (max-width:576px){
+    aside{
+        padding-top:3em;
+    }
+    .header>.title{
+        padding:0 15px;
+        text-align:center;
+    }
+    .title>h2{
+        font-size:45px;
+    }
+    section>.loisirs{
+        padding-top:0;
+    }
+    .col-11{
+        margin:0;
+    }
+    .fa-graduation-cap{
+        margin-right:150px;
+    }
+ 
+
+}
+
+/*Media queries medium*/
+@media (max-width:768px){
+    .col-11{
+        margin-left:20px;
+    }
+    .header > .title{
+        padding-left:40px;
+    }
+    table {
+        margin-left: 0;
+        word-break: break-word;
+    }
+    .icone{
+        margin:0.1em;
+    }
+    section > .loisirs {
+        padding-top: 0;
+    }
+    section >.col-md-6{
+        padding:0;
+    }
+    img{
+        width:10em;
+    }
+    table .email{
+        padding-right:12px!important;
+    }
+    .fa-graduation-cap, .fa-laptop-code, .fa-user-friends{
+        margin-right:0;
+    }
+}
+@media (min-width:768px){
+    table {
+        margin-left:0.6em;
+        word-break: break-word;
+    }
+    table .email {
+       padding-right:25px; /*Pour faire descendre le .com sur ipad landscape */
+   }
+}
