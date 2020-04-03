@@ -18,7 +18,7 @@
 img {
     border: 1px solid white;
     border-radius: 50%;
-    width: 13em!important;
+    width: 10em;
     padding-top: 5em;
     padding-bottom: 5em;
 }
@@ -29,10 +29,10 @@ img {
     color: #B9D6D6;
 }
 em {
-    text-decoration: underline;
-    text-decoration-color: #B9D6D6;
-    font-style:normal;
+    border-bottom: 2px solid #B9D6D6;
+    font-style:initial;
 }
+
 
 /************************************************************/
 
@@ -166,42 +166,38 @@ h3 {
     .fa-graduation-cap{
         margin-right:150px;
     }
-
+ 
 }
 
 /*Media queries medium*/
-@media (max-width:768px){
-    .col-11{
-        margin-left:20px;
-    }
-    .header > .title{
-        padding-left:40px;
-    }
+@media (max-width:768px) {
+
     table {
         word-break: break-word;
     }
-    .icone{
-        margin:0.1em;
+
+    .icone {
+        margin: 0.1em;
     }
+
     section > .loisirs {
         padding-top: 0;
     }
-    section >.col-md-6{
-        padding:0;
+
+    section > .col-md-6 {
+        padding: 0;
     }
-    img{
-        width:10em;
+
+    table .email {
+        padding-right: 12px;
     }
-    table .email{
-        padding-right:12px;
-    }
-    .fa-graduation-cap, .fa-laptop-code, .fa-user-friends{
-        margin-right:0;
+
+    .fa-graduation-cap, .fa-laptop-code, .fa-user-friends {
+        margin-right: 0;
     }
 }
 @media (min-width:768px){
     table {
-   
         word-break: break-word;
     }
     table .email {
@@ -210,4 +206,5 @@ h3 {
    table .site {
        padding-right:21px;/*Pour faire descendre le .com*/
    }
+
 }
