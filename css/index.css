@@ -60,6 +60,10 @@ section >.description{
     padding-bottom:2em;
     align-items:center;
 }
+.row>.loisirs>.i{
+    display:flex;
+    justify-content:space-around;
+}
 section > .loisirs{
     padding-top:48em;
 }
@@ -138,5 +142,71 @@ h3 {
     opacity:0.5;
 }
 
+/*Faire un check sur W3C*/
+/************************************************************************/
 
+/*Media queries small*/
+@media (max-width:576px){
+    aside{
+        padding-top:3em;
+    }
+    .header>.title{
+        padding:0 15px;
+        text-align:center;
+    }
+    .title>h2{
+        font-size:45px;
+    }
+    section>.loisirs{
+        padding-top:0;
+    }
+    .col-11{
+        margin:0;
+    }
+    .fa-graduation-cap{
+        margin-right:150px;
+    }
+ 
 
+}
+
+/*Media queries medium*/
+@media (max-width:768px){
+    .col-11{
+        margin-left:20px;
+    }
+    .header > .title{
+        padding-left:40px;
+    }
+    table {
+        margin-left: 0;
+        word-break: break-word;
+    }
+    .icone{
+        margin:0.1em;
+    }
+    section > .loisirs {
+        padding-top: 0;
+    }
+    section >.col-md-6{
+        padding:0;
+    }
+    img{
+        width:10em;
+    }
+    table .email{
+        padding-right:12px!important;
+    }
+    .fa-graduation-cap, .fa-laptop-code, .fa-user-friends{
+        margin-right:0;
+    }
+}
+@media (min-width:768px){
+    table {
+        margin-left:0.6em;
+        word-break: break-word;
+    }
+    table .email {
+       padding-right:25px; /*Pour faire descendre le .com sur ipad landscape */
+   }
+}
